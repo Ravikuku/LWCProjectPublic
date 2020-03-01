@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title = "Search Accounts" icon-name = "custom:custom63">  
+        <div class = "slds-m-around_medium">  
+            <lightning-layout>
+                <lightning-input data-id= "searchAccount" type = "search" class = "slds-m-bottom_small" label = "Search Account" onclick ={handleOnClick} value={name}> </lightning-input>  
+            </lightning-layout>
+                <lightning-layout>
+                <c-search-Accounts onselectedrecordevent={selectedRecordEvent}></c-search-Accounts>
+                </lightning-layout>
+            </div>
+        </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title ="Set Your View">
+        <lightning-layout horizontal-align ="center">
+            <lightning-layout-item padding="around-small">
+                <lightning-combobox
+                name="carTypes"
+                placeholder="All Types"
+                value={value}
+                onchange={handleChange}
+                options={carTypes}>
+        </lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small">
+                <lightning-button label="New" title="New" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout> 
+    </lightning-card>
+</template>

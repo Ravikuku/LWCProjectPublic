@@ -1,0 +1,6 @@
+.redColor{
+    color:#ff6347;
+}
+:host{
+    border : 4PX solid green 
+}

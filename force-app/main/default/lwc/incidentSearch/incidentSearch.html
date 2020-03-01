@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Search Incidents123">
+        <lightning-input type="text" name="IncNo" label="Incident #" value={incNum} onchange={handelIncNum}></lightning-input>
+        <template if:true={statusValues.data}>
+        <lightning-combobox
+        name="status"
+        label="Status"
+        value={statusvalue}
+        placeholder="Select Progress"
+        options={statusValues.data.values}
+        onchange={handleChange} ></lightning-combobox>
+    </template>
+        <lightning-button variant="brand" label="Search Incident" title="Search Incident" onclick={handleSearch} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+   
+</template>

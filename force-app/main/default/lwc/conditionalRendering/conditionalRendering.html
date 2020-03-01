@@ -1,0 +1,17 @@
+<template>
+    <lightning-input type="checkbox" label="ShowDiv" onchange={showDivHandler}></lightning-input>
+    <template if:true={displayDiv}>
+    <div>i am here</div>
+</template>
+<template if:false={displayDiv}>
+    <div>i am here false</div>
+</template>
+<template for:each={cityList} for:item="city">
+<p key={city}>{city}</p>
+</template>
+<div>this is from iterator</div>
+<!-- // iterator can access first and last element it.first,it.index and it.last-->
+<template iterator:it={cityList}> 
+    <p key={it.value}>{it.value}</p>
+</template>
+</template>

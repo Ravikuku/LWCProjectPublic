@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Picture__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE (FirstName &amp; LastName,&#39;Tim&#39; &amp; &#39;Barr&#39;, IMAGE(&#39;/servlet/servlet.FileDownload?file=0152w000000HMp8&#39;,&#39;TimPicture&#39;, 100, 100), NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Picture</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
